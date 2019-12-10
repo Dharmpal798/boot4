@@ -1,0 +1,35 @@
+
+/* 29 nov 2019 start code css */
+
+@font-face {
+    font-family: Belgiansignature;
+    src: url(../fonts/Belgiansignature.ttf);      
+}
+
+@font-face {
+    font-family: Mightype Script;
+    src: url(../fonts/Mightype Script.ttf);       
+}
+
+h1 {
+    font-family: Belgiansignature;
+}
+
+h2 {
+    font-family: Mightype Script;
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+p {
+
+}
+
+
+/* 29 nov 2019 end code css */

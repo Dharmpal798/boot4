@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Demo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css"> 
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+<style>
+  
+.boxes {
+    width: 100%;
+    height: 100%;
+}
+
+.boxes2 {
+    width: 300px;
+    height: 300px;
+    border: solid 1px #333;
+    margin: auto;
+}
+.boxes2 video {       
+    width: 100%; 
+    height: 100%;
+}
+
+.boxes h1 {
+    margin-top: 50px;
+    position: relative;
+    top: 50%;
+    transform: translate(0%, 50%);  
+}
+
+.products {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    padding-top: 50px;
+    border: solid 1px #000;
+    background-image: url(images/product1.jpg), url(images/product2.jpg); 
+    /*background-size: cover;*/
+    background-repeat: no-repeat; 
+}
+
+.linear_bg {
+    height: 500px;
+    background: linear-gradient(rgba(26, 188, 156, 0.78), rgba(231, 76, 60, 0.75)), 
+    url(images/bg.jpg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+</style>
+
+</head>
+<body>                         
+
+<div class="boxes">
+    <div class="boxes2">    
+        <video poster="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSuOWHpULzM8iF7U5dUU8P2HYKU6rs5JqOZOJ3fJpnK5R300tkV" controls>   
+            <source src="images/Hardy_Sandhu.mp4" type="video/mp4">
+            <source src="images/Hardy_Sandhu.mp4" type="video/ogg"> 
+        </video>
+    </div> 
+
+    <h1 class="text-center mb-4">CAPITAL</h1>
+
+    <div class="products pt-4">         
+        
+    </div>
+
+    <div class="linear_bg">
+        <h1 class="text-center">
+             Linear Background                      
+        </h1>
+    </div>
+
+</div>
+  
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/wow.js"></script>
+
+<script>
+  new WOW().init(); 
+</script>
+
+<script>
+  
+jQuery.fn.ucwords = function() {
+  return this.each(function(){
+    var val = $(this).text(), newVal = '';
+    val = val.split(' ');
+
+    for(var c=0; c < val.length; c++) {
+      newVal += val[c].substring(0,1).toUpperCase() + val[c].substring(1,val[c].length) + (c+1==val.length ? '' : ' ');
+    }
+    $(this).text(newVal); 
+  });
+}
+
+$('.boxes h1').ucwords(); 
+
+</script>
+
+
+</body>
+</html>      
+
+
+
+
+<!-- https://flatuicolors.com/palette/defo -->
+
+<!-- gradient color url features -->                 
